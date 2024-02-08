@@ -1,0 +1,21 @@
+{
+    "appName": "scheduler",
+    "roleName": "pinpointLambdaRole63cffe06",
+    "cloudformationPolicyName": "cloudformationPolicy63cffe06",
+    "cloudWatchPolicyName": "cloudWatchPolicy63cffe06",
+    "pinpointPolicyName": "pinpointPolicy63cffe06",
+    "authPolicyName": "pinpoint_amplify_63cffe06",
+    "unauthPolicyName": "pinpoint_amplify_63cffe06",
+    "authRoleName": {
+        "Ref": "AuthRoleName"
+    },
+    "unauthRoleName": {
+        "Ref": "UnauthRoleName"
+    },
+    "authRoleArn": {
+        "Fn::GetAtt": [
+            "AuthRole",
+            "Arn"
+        ]
+    }
+}
